@@ -23,3 +23,28 @@ unicode_preview <- function(){
   message("To use the following symbols, please see  `unicode_symbols` list\n", rep("-", 40))
   message(paste("[", unlist(unicode_symbols), "]", names(unicode_symbols), "\n"))
 }
+
+
+#' Coloured Message
+#'
+#' @param ... (string/s) MEssage to format Comma separated strings will be concatenated (no spaces) before colorisation.
+#'
+#' @return run for its side effects
+#' @export
+message_bold <- function(...) { message(fmtbold(...))  }
+
+#' Coloured Message
+#'
+#' @param ... (string/s) MEssage to format Comma separated strings will be concatenated (no spaces) before colorisation.
+#'
+#' @return run for its side effects
+#' @export
+message_success <- function(...) { message(fmtsuccess("[", unicode_symbols[["Heavy Check Mark Emoji"]], "] ",...))  }
+
+#' Coloured Message
+#'
+#' @param ... (string/s) MEssage to format Comma separated strings will be concatenated (no spaces) before colorisation.
+#'
+#' @return run for its side effects
+#' @export
+message_error <- function(...) { message(fmterror("[", unicode_symbols[["Heavy Ballot X"]], "] ",...))  }

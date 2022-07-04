@@ -26,18 +26,9 @@ devtools::install_github("selkamand/utilitybeltfmt")
 
 ``` r
 library(utilitybeltfmt)
-
-
-# Preformatted message types
-message_error("This is an error")
-#> [✘] This is an error
-message_warning("This is a warning")
-#> [!] This is a warning
-message_info("This text is informative")
-#> [ℹ] This text is informative
-message_bold("This text is bold")
-#> This text is bold
 ```
+
+![](images/paste-46C66429.png)
 
 ### Formatting options
 

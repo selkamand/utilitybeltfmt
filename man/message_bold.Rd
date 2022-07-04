@@ -4,16 +4,20 @@
 \alias{message_bold}
 \title{Coloured Message}
 \usage{
-message_bold(..., symbol = TRUE)
+message_bold(...)
 }
 \arguments{
 \item{...}{(string/s) MEssage to format Comma separated strings will be concatenated (no spaces) before colorisation.}
-
-\item{symbol}{add a symbol indicating the type of message as prefix (boolean) (TRUE)}
 }
 \value{
 run for its side effects
 }
 \description{
 Coloured Message
+}
+\examples{
+message_error("This is an error")
+message_warning("This is a warning")
+message_info("This text is informative")
+message_bold("This text is bold")
 }

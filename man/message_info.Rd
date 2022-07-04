@@ -17,3 +17,9 @@ run for its side effects
 \description{
 Coloured Message
 }
+\examples{
+message_error("This is an error")
+message_warning("This is a warning")
+message_info("This text is informative")
+message_bold("This text is bold")
+}

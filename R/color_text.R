@@ -12,8 +12,9 @@
 #' @export
 #'
 #' @examples
-#' message(fmterror("This is a warning"))
+#' message(fmterror("This is an error"))
 #' message(fmtwarning("This is a warning"))
+#' message(fmtinfo("This text is informative"))
 #' message(fmtbold("This text is bold"))
 fmterror <- function(..., symbol = TRUE) {
   symbol_text = ifelse(symbol,yes=paste0("[", unicode_symbols[["Heavy Ballot X"]], "] "), no = "")

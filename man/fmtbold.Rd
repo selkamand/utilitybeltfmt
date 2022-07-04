@@ -20,7 +20,8 @@ fmterror, fmtwarning, fmtsuccess, fmtbold.
 If greater control is required, use the crayon package
 }
 \examples{
-message(fmterror("This is a warning"))
+message(fmterror("This is an error"))
 message(fmtwarning("This is a warning"))
+message(fmtinfo("This text is informative"))
 message(fmtbold("This text is bold"))
 }

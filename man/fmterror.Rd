@@ -4,10 +4,12 @@
 \alias{fmterror}
 \title{Colour text}
 \usage{
-fmterror(...)
+fmterror(..., symbol = TRUE)
 }
 \arguments{
 \item{...}{(string/s) Text to colorise. Comma separated strings will be concatenated (no spaces) before colorisation.}
+
+\item{symbol}{add a symbol indicating the type of message as prefix (boolean)}
 }
 \value{
 (string) Input text flanked by relevant Ansi escape codes
@@ -21,4 +23,6 @@ If greater control is required, use the crayon package
 }
 \examples{
 message(fmterror("This is a warning"))
+message(fmtwarning("This is a warning"))
+message(fmtbold("This text is bold"))
 }

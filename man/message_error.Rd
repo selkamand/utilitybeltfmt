@@ -4,10 +4,12 @@
 \alias{message_error}
 \title{Coloured Message}
 \usage{
-message_error(...)
+message_error(..., symbol = TRUE)
 }
 \arguments{
 \item{...}{(string/s) MEssage to format Comma separated strings will be concatenated (no spaces) before colorisation.}
+
+\item{symbol}{add a symbol indicating the type of message as prefix (boolean) (TRUE)}
 }
 \value{
 run for its side effects

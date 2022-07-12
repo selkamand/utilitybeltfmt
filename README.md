@@ -32,6 +32,8 @@ library(utilitybeltfmt)
 
 ### Formatting options
 
+#### Format Strings
+
 You can also **`fmt`**`type` functions to produce formatted (colorised)
 strings. These functions are useful for assertion messages.
 
@@ -48,13 +50,19 @@ message(fmtinfo("This text is informative"))
 message(fmtbold("This text is bold"))
 ```
 
-Or if you have numbers to reformat, try fmtpercent or fmtscientific
+#### Format Numbers
+
+Convert to percentage with `fmtpercent` or scientific notation
+`fmtscientific`. Note these functions return characters (NOT numerics!).
 
 ``` r
 fmtpercent(97.8, decimal_places = 2)
 #> [1] "97.80%"
 fmtpercent(97.8, decimal_places = 0)
 #> [1] "98%"
+fmtpercent(0.12, decimal_places = 1, proportion = TRUE)
+#> [1] "12.0%"
+
 fmtscientific(0.0001)
 #> [1] "1e-04"
 ```

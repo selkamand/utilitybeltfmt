@@ -16,5 +16,5 @@ scientific notation form(character)
 Formatters
 }
 \examples{
-format_scientific(0.1)
+fmtscientific(0.1)
 }

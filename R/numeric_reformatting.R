@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' format_percent(5, decimal_places = 2) # returns 5%
+#' fmtpercent(5, decimal_places = 2) # returns 5%
 fmtpercent <- function(number, decimal_places = 1){
   assertthat::assert_that(is.numeric(number), msg = utilitybeltfmt::fmterror("format_percent: expected number argument to be numeric, not [", class(number),"]"))
   paste0(format(round(number, decimal_places), nsmall = decimal_places), "%")
@@ -24,7 +24,7 @@ fmtpercent <- function(number, decimal_places = 1){
 #' @export
 #'
 #' @examples
-#' format_scientific(0.1)
+#' fmtscientific(0.1)
 fmtscientific <- function(number){
   assertthat::assert_that(is.numeric(number), msg = utilitybeltfmt::fmterror("format_scientific: expected number argument to be numeric, not [", class(number),"]"))
   format(number, scientific = TRUE)

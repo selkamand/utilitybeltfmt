@@ -18,5 +18,5 @@ percentage formatted string (character)
 Formatters
 }
 \examples{
-format_percent(5, decimal_places = 2) # returns 5\%
+fmtpercent(5, decimal_places = 2) # returns 5\%
 }

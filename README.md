@@ -32,8 +32,8 @@ library(utilitybeltfmt)
 
 ### Formatting options
 
-You can also use **`fmt`**`type` functions to produce formatted strings.
-These functions are useful for assertion messages.
+You can also **`fmt`**`type` functions to produce formatted (colorised)
+strings. These functions are useful for assertion messages.
 
 ``` r
 # Example assertion
@@ -46,4 +46,15 @@ message(fmterror("This is an error"))
 message(fmtwarning("This is a warning"))
 message(fmtinfo("This text is informative"))
 message(fmtbold("This text is bold"))
+```
+
+Or if you have numbers to reformat, try fmtpercent or fmtscientific
+
+``` r
+fmtpercent(97.8, decimal_places = 2)
+#> [1] "97.80%"
+fmtpercent(97.8, decimal_places = 0)
+#> [1] "98%"
+fmtscientific(0.0001)
+#> [1] "1e-04"
 ```

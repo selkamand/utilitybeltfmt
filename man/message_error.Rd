@@ -4,12 +4,14 @@
 \alias{message_error}
 \title{Coloured Message}
 \usage{
-message_error(..., symbol = TRUE)
+message_error(..., symbol = TRUE, level = 1)
 }
 \arguments{
-\item{...}{(string/s) MEssage to format Comma separated strings will be concatenated (no spaces) before colorisation.}
+\item{...}{(string/s) Message to format. Comma separated strings will be concatenated (no spaces) before colorisation.}
 
-\item{symbol}{add a symbol indicating the type of message as prefix (boolean) (TRUE)}
+\item{symbol}{add a symbol indicating the type of message as prefix (boolean)}
+
+\item{level}{how many tabs should be used as a prefix to the text (calculated as level-1) (numeric)}
 }
 \value{
 run for its side effects

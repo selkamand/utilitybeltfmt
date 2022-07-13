@@ -4,12 +4,14 @@
 \alias{fmterror}
 \title{Colour text}
 \usage{
-fmterror(..., symbol = TRUE)
+fmterror(..., symbol = TRUE, level = 1)
 }
 \arguments{
 \item{...}{(string/s) Text to colorise. Comma separated strings will be concatenated (no spaces) before colorisation.}
 
 \item{symbol}{add a symbol indicating the type of message as prefix (boolean)}
+
+\item{level}{how many tabs should be used as a prefix to the text (calculated as level-1) (numeric)}
 }
 \value{
 (string) Input text flanked by relevant Ansi escape codes

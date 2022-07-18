@@ -4,12 +4,14 @@
 \alias{message_bold}
 \title{Coloured Message}
 \usage{
-message_bold(..., level = 1)
+message_bold(..., level = 1, verbose = TRUE)
 }
 \arguments{
 \item{...}{(string/s) Message to format. Comma separated strings will be concatenated (no spaces) before colorisation.}
 
 \item{level}{how many tabs should be used as a prefix to the text (calculated as level-1) (numeric)}
+
+\item{verbose}{should the message be printed? This argument allows verbosity arguments of parent functions to easily inform what messages end-users will see (boolean)}
 }
 \value{
 run for its side effects

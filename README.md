@@ -4,7 +4,16 @@
 # utilitybeltfmt
 
 <!-- badges: start -->
+
+[![Lifecycle:
+superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#superseded)
+
 <!-- badges: end -->
+
+------------------------------------------------------------------------
+
+**This package has been superseded by
+[fmt](https://github.com/selkamand/fmt)**
 
 The goal of utilitybeltfmt is to colorise R console output with minimal
 effort. Preconfigured colorisations/symbol prefixes are provided for
@@ -38,6 +47,7 @@ You can also **`fmt`**`type` functions to produce formatted (colorised)
 strings. These functions are useful for assertion messages.
 
 ``` r
+
 # Example assertion
 if(condition == true){
   stop(fmterror("This is an error"))
@@ -57,6 +67,10 @@ Convert to percentage with `fmtpercent` or scientific notation
 
 ``` r
 fmtpercent(97.8, decimal_places = 2)
+#> Warning: `fmtpercent()` was deprecated in utilitybeltfmt 0.0.0.9000.
+#> Please use `fmt::fmtpercent()` instead.
+#> This warning is displayed once every 8 hours.
+#> Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
 #> [1] "97.80%"
 fmtpercent(97.8, decimal_places = 0)
 #> [1] "98%"
@@ -64,5 +78,9 @@ fmtpercent(0.12, decimal_places = 1, proportion = TRUE)
 #> [1] "12.0%"
 
 fmtscientific(0.0001)
+#> Warning: `fmtscientific()` was deprecated in utilitybeltfmt 0.0.0.9000.
+#> Please use `fmt::fmtscientific()` instead.
+#> This warning is displayed once every 8 hours.
+#> Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
 #> [1] "1e-04"
 ```

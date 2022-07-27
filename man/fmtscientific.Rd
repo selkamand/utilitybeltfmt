@@ -13,7 +13,7 @@ fmtscientific(number)
 scientific notation form(character)
 }
 \description{
-Formatters
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
 }
 \examples{
 fmtscientific(0.1)

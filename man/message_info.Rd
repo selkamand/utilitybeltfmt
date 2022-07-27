@@ -19,7 +19,7 @@ message_info(..., symbol = TRUE, level = 1, verbose = TRUE)
 run for its side effects
 }
 \description{
-Coloured Message
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
 }
 \examples{
 message_error("This is an error")

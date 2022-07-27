@@ -10,7 +10,7 @@ unicode_preview()
 run for its side effects
 }
 \description{
-List supported unicode paramateres
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
 }
 \examples{
 unicode_preview()

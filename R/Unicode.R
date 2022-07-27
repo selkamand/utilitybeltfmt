@@ -2,6 +2,8 @@
 
 #' Unicode Character Codes
 #'
+#' `r lifecycle::badge('superseded')`
+#'
 #' Unicode character codes
 #'
 #' @format a list. Names = descriptors of the unicode symbol. Values = unicode code
@@ -21,12 +23,15 @@ unicode_symbols <- list(
 
 #' List supported unicode paramateres
 #'
+#' `r lifecycle::badge('superseded')`
+#'
 #' @return run for its side effects
 #' @export
 #'
 #' @examples
 #' unicode_preview()
 unicode_preview <- function(){
+  lifecycle::deprecate_warn(when = "0.0.0.9000", what = "utilitybeltfmt::unicode_preview()", with = "fmt::unicode_preview()")
   message("To use the following symbols, please see  `unicode_symbols` list\n", rep("-", 40))
   message(paste("[", unlist(unicode_symbols), "]", names(unicode_symbols), "\n"))
 }

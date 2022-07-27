@@ -17,7 +17,7 @@ fmtpercent(number, decimal_places = 1, proportion = FALSE)
 percentage formatted string (character)
 }
 \description{
-Formatters
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
 }
 \examples{
 fmtpercent(5, decimal_places = 2) # returns 5\%

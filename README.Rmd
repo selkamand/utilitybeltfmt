@@ -17,7 +17,13 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 
+[![Lifecycle: superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#superseded)
+
 <!-- badges: end -->
+
+------------------------------------------------------------------------
+
+**This package has been superseded by [fmt](https://github.com/selkamand/fmt)**
 
 The goal of utilitybeltfmt is to colorise R console output with minimal effort. Preconfigured colorisations/symbol prefixes are provided for errors, warnings, and info messages.
 
@@ -62,8 +68,7 @@ message(fmtbold("This text is bold"))
 
 #### Format Numbers
 
-Convert to percentage with `fmtpercent` or scientific notation `fmtscientific`.
-Note these functions return characters (NOT numerics!).
+Convert to percentage with `fmtpercent` or scientific notation `fmtscientific`. Note these functions return characters (NOT numerics!).
 
 ```{r}
 fmtpercent(97.8, decimal_places = 2)

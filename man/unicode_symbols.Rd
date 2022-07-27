@@ -11,6 +11,9 @@ a list. Names = descriptors of the unicode symbol. Values = unicode code
 unicode_symbols
 }
 \description{
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#superseded}{\figure{lifecycle-superseded.svg}{options: alt='[Superseded]'}}}{\strong{[Superseded]}}
+}
+\details{
 Unicode character codes
 }
 \keyword{datasets}
